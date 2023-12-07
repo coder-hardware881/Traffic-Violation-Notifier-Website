@@ -1,0 +1,63 @@
+body {
+    background: black;
+    color: whitesmoke;
+    font-family: "googlesans";
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+h1 {
+    margin: 10px auto;
+    width: fit-content;
+    font-size: 2.7em;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    background-color: #222;
+    display: flex;
+    justify-content: left;
+    position: fixed;
+    top: 0;
+    z-index:999;
+}
+li a {
+    display: block;
+    font-size: 1.25em;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+body::-webkit-scrollbar-track {
+    border-radius: 7px;
+    background-color: rgba(100, 100, 100, 0.7);
+    border: 1px rgba(0, 255, 255, 0.3) solid;
+}
+body::-webkit-scrollbar {
+    width: 7px;
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(30, 30, 30, 100);
+    border: 1px rgba(0, 255, 255, 0.3) solid;
+    border-top: none;
+    border-bottom: none;
+}
+.content{
+    padding-top: 53px;
+}
+@font-face {
+    font-family: "googlesans";
+    src: url("https://fonts.gstatic.com/s/googlesans/v16/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2") format("woff2");
+}
+@media only screen and (max-width : 400px) {
+    body{
+        font-size: .7em;
+    }
+}

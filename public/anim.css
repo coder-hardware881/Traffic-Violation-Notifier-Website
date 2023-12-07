@@ -1,0 +1,69 @@
+.c1 {
+    height: 36px;
+    width: 36px;
+    display: block;
+    animation: 1568.63ms linear 0s infinite normal none running mspin-rotate;
+    overflow: hidden;
+    margin: auto;
+}
+.c2 {
+    animation: 5332ms steps(4) 0s infinite normal none running mspin-revrot;
+    transform-origin: 18px 18px;
+    position: relative;
+}
+.c3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: 5332ms steps(324) 0s infinite normal none running mspin;
+    background-image: url('https://gstatic.com/ui/v2/activityindicator/mspin_googcolor_medium.svg');
+    background-size: 100%;
+    height: 36px;
+    width: 11664px;
+}
+@keyframes mspin {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-11664px);
+    }
+}
+@keyframes mspin-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes mspin-revrot {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: -360deg;
+    }
+}
+.m {
+    animation-duration: 8s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-name: show;
+    opacity: 0;
+}
+.r {
+    background: #ff000040;
+}
+.g {
+    background: #0000ff40;
+}
+@keyframes show {
+    5% {
+        opacity: 1;
+    }
+    100% {
+        background: black;
+        opacity:1;
+    }
+}

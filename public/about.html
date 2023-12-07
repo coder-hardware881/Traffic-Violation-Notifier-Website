@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>
+        <link rel="stylesheet" href="basic.css">
+        <script defer>
+            window.onscroll = function () {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            };
+        </script>
+    </head>
+    <body>
+        <ul id="navbar">
+            <li><a href="./">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+        </ul>
+        <div class="content">
+            <h1>About the project</h1>
+        </div>
+    </body>
+</html>

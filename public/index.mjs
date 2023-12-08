@@ -26,13 +26,16 @@ const parent = document.querySelector("#warns");
 const options = {
     weekday: "long", year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"
 };
-onChildAdded(dbRef, (snapshot) => {
-    let val = snapshot;
-    gen(val);
-    console.log("added");
-    parent.style.display='block'
-    document.querySelector("#warns + .c1").style.display='none'
-});
+//commented out as firebase project is deleted
+// onChildAdded(dbRef, (snapshot) => {
+//     let val = snapshot;
+//     gen(val);
+//     console.log("added");
+//     parent.style.display='block'
+//     document.querySelector("#warns + .c1").style.display='none'
+// });
+parent.style.display = 'block'
+document.querySelector("#warns + .c1").style.display='none'
 
 function gen(a) {
     let el = document.createElement("div");

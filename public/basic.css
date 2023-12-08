@@ -1,3 +1,4 @@
+/* basic css for the site */
 body {
     background: black;
     color: whitesmoke;
@@ -60,4 +61,7 @@ body::-webkit-scrollbar-thumb {
     body{
         font-size: .7em;
     }
+}
+img{
+    border: none;
 }
